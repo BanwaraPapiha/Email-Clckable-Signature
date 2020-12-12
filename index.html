@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Clickable Email Signature</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        #phot>img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+        }
+
+        a img {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* This is a just for check */
+        div {
+            padding: 5px;
+            margin: 1px;
+            color: #232C9F;
+
+        }
+
+        #info>* {
+            margin: 2px;
+        }
+
+        #container {
+            margin: 5px;
+            border-top: 5px solid blue;
+            display: flex;
+            justify-content: flex-start;
+            width: 340px;
+            height: 150px;
+            background-color: rgba(204, 211, 210, 0.445);
+            font-family: "Sofia", sans-serif;
+            text-shadow: 3px 3px 3px #ababab;
+
+        }
+
+        li {
+            padding: 1px;
+            margin: 1px;
+        }
+
+        #info {
+            width: 180px;
+            border: 2px solid blue;
+            height: auto;
+            word-break: break-all;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            padding-left: 1px;
+            margin: 2px;
+            align-items: flex-start;
+        }
+
+        @media (max-width: 360px) {
+            #container {
+                flex-direction: column;
+                width: 150px;
+                height: auto;
+            }
+
+            #phot>img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+
+            ul {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            #info {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="phot"><img src="photo.jpg" alt="Photo"></div>
+        <div id="info">
+            <h2>Elliot Alderson</h2>
+            <h4>All Safe Employee</h4>
+            <h5>Unknown</h5>
+        </div>
+        <div id="social">
+            <ul>
+                <li><a href="https://www.twitter.com"><img src="twitter.png" alt=""></a></li>
+                <li><a href="https://www.linkedin.com"><img src="linkedin.png" alt="linkedin"></a></li>
+                <li><a href="https://www.discord.com"><img src="discord.png" alt="Discord"></a></li>
+                <li><a href="https://www.twitch.tv"><img src="twitch.png" alt="Twitch"></a></li>
+                <li><a href="https://www.github.com"><img src="github.png" alt="Github"></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
